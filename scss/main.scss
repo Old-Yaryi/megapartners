@@ -1,0 +1,132 @@
+body {
+  min-height: 100vh;
+  padding: 16px 0 0;
+  margin: 0;
+  background-origin: border-box;
+  font-family: 'Lexend', sans-serif;
+  background-color: rgb(17, 10, 29);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 16px;
+}
+
+header {
+  width: 90vw;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 0;
+  margin: 0 auto;
+  border: 4px solid rgb(71, 139, 249);
+  border-radius: 64px;
+  background: rgb(17, 10, 29);
+}
+
+.header {
+  &-logo {
+    & img {
+      width: 17vw;
+    }
+  }
+
+  &-menu {
+    max-width: 588px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 32px;
+
+    &__link {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &-prop {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+  }
+
+  &-lang {
+    border: 2px solid #9DADF2;
+    padding: 14px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    &__img {
+      display: flex;
+    }
+
+    &__info {
+      text-transform: uppercase;
+      line-height: 20px;
+      cursor: pointer;
+    }
+
+    &__inputs {
+      position: relative;
+      display: none;
+    }
+
+    & label {
+      text-transform: uppercase;
+    }
+  }
+
+  &-auth {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+
+    &__btn {
+      border: 2px solid #9DADF2;
+      padding: 14px;
+      border-radius: 24px;
+      background-color: #110A1D;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: 'Lexend', sans-serif;
+      font-size: 16px;
+      cursor: pointer;
+      line-height: 20px;
+
+      &:hover,
+      &.blue {
+        border-color: #478BF9;
+        background-color: #478BF9;
+      }
+    }
+  }
+}
+
+
+main {
+  flex-grow: 1;
+
+  & h1 {
+    width: 400px;
+  }
+}
+
+
+footer {
+  flex-grow: 0;
+  border-left: 4px solid rgb(71, 139, 249);
+  border-right: 4px solid rgb(71, 139, 249);
+  border-top: 4px solid rgb(71, 139, 249);
+  border-radius: 64px 64px 0px 0px;
+
+  & p {
+    width: 400px;
+  }
+}
