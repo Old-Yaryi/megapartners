@@ -110,7 +110,101 @@ footer {
   border-right: 4px solid rgb(71, 139, 249);
   border-top: 4px solid rgb(71, 139, 249);
   border-radius: 64px 64px 0px 0px;
+  padding: 40px 0 20px;
 }
-footer p {
-  width: 400px;
+
+.footer-container {
+  width: 90vw;
+  max-width: 1640px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.footer-logo {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.footer-nav {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.footer-nav__link:first-child {
+  color: #478BF9;
+  text-decoration: underline;
+}
+.footer-nav__link {
+  color: #fff;
+  text-decoration: none;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: "Lexend", sans-serif;
+}
+.footer-social p {
+  font-family: "Lexend", sans-serif;
+  text-align: end;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 14px;
+}
+.footer-social__item {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.footer-social__link {
+  height: 32px;
+  width: 32px;
+}
+.footer-social__link.twitter {
+  background-image: url(../img/twitter.svg);
+}
+.footer-social__link.twitter:hover {
+  background-image: url(../img/twitter-hover.svg);
+}
+.footer-social__link.facebook {
+  background-image: url(../img/facebook.svg);
+}
+.footer-social__link.facebook:hover {
+  background-image: url(../img/facebook-hover.svg);
+}
+.footer-social__link.instagram {
+  background-image: url(../img/instagram.svg);
+}
+.footer-social__link.instagram:hover {
+  background-image: url(../img/instagram-hover.svg);
+}
+.footer-social__link.linkedin {
+  background-image: url(../img/linkedin.svg);
+}
+.footer-social__link.linkedin:hover {
+  background-image: url(../img/linkedin-hover.svg);
+}
+.footer-social__link.youtube {
+  background-image: url(../img/youtube.svg);
+}
+.footer-social__link.youtube:hover {
+  background-image: url(../img/youtube-hover.svg);
+}
+.footer-social__link.tictoc {
+  background-image: url(../img/tictoc.svg);
+}
+.footer-social__link.tictoc:hover {
+  background-image: url(../img/tictoc-hover.svg);
+}
+.footer-social__link.telegram {
+  background-image: url(../img/telegram.svg);
+}
+.footer-social__link.telegram:hover {
+  background-image: url(../img/telegram-hover.svg);
+}
+.footer-social__link.vk {
+  background-image: url(../img/VK.svg);
+}
+.footer-social__link.vk:hover {
+  background-image: url(../img/VK-hover.svg);
 }/*# sourceMappingURL=main.css.map */

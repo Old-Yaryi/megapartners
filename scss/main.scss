@@ -125,8 +125,127 @@ footer {
   border-right: 4px solid rgb(71, 139, 249);
   border-top: 4px solid rgb(71, 139, 249);
   border-radius: 64px 64px 0px 0px;
+  padding: 40px 0 20px;
+}
 
-  & p {
-    width: 400px;
+.footer {
+  &-container {
+    width: 90vw;
+    max-width: 1640px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  &-logo {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  &-nav {
+    display: flex;
+    column-gap: 40px;
+
+    &__link:first-child {
+      color: #478BF9;
+      text-decoration: underline;
+    }
+
+    &__link {
+      color: #fff;
+      text-decoration: none;
+      line-height: 20px;
+      font-size: 16px;
+      font-family: 'Lexend', sans-serif;
+    }
+  }
+
+  &-social {
+    & p {
+      font-family: 'Lexend', sans-serif;
+      text-align: end;
+      line-height: 20px;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0 0 14px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+    }
+
+    &__link {
+      height: 32px;
+      width: 32px;
+
+      &.twitter {
+        background-image: url(../img/twitter.svg);
+
+        &:hover {
+          background-image: url(../img/twitter-hover.svg);
+        }
+      }
+
+      &.facebook {
+        background-image: url(../img/facebook.svg);
+
+        &:hover {
+          background-image: url(../img/facebook-hover.svg);
+        }
+      }
+
+      &.instagram {
+        background-image: url(../img/instagram.svg);
+
+        &:hover {
+          background-image: url(../img/instagram-hover.svg);
+        }
+      }
+
+      &.linkedin {
+        background-image: url(../img/linkedin.svg);
+
+        &:hover {
+          background-image: url(../img/linkedin-hover.svg);
+        }
+      }
+
+      &.youtube {
+        background-image: url(../img/youtube.svg);
+
+        &:hover {
+          background-image: url(../img/youtube-hover.svg);
+        }
+      }
+
+      &.tictoc {
+        background-image: url(../img/tictoc.svg);
+
+        &:hover {
+          background-image: url(../img/tictoc-hover.svg);
+        }
+      }
+
+      &.telegram {
+        background-image: url(../img/telegram.svg);
+
+        &:hover {
+          background-image: url(../img/telegram-hover.svg);
+        }
+      }
+
+      &.vk {
+        background-image: url(../img/VK.svg);
+
+        &:hover {
+          background-image: url(../img/VK-hover.svg);
+        }
+      }
+    }
+
+
   }
 }
