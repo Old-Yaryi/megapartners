@@ -114,6 +114,7 @@ header {
 }
 
 .main {
+  position: relative;
   flex-grow: 1;
   max-width: 1640px;
   margin: 0 auto;
@@ -122,6 +123,17 @@ header {
   justify-content: space-between;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+.main::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  filter: blur(300px);
+  background: linear-gradient(180deg, rgb(71, 139, 249), rgba(71, 139, 249, 0.4) 100%);
+  opacity: 0.55;
+  height: 100%;
+  width: 11.8vh;
+  content: "";
 }
 .main-item.title {
   margin: auto 0;
@@ -159,18 +171,40 @@ header {
        column-gap: 14px;
 }
 .main-chips__line {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+  height: 140vh;
 }
 .main-chips__line.first {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  margin-top: -40px;
+}
+.main-chips__line.first .main-chips__block {
+  animation: animUp 4s linear infinite;
+}
+.main-chips__line.second {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  overflow: hidden;
+}
+.main-chips__line.second .main-chips__block {
+  animation: animDoun 6s linear infinite;
 }
 .main-chips__line.thierd {
   margin-top: 40px;
+  margin-bottom: -150px;
+}
+.main-chips__line.thierd .main-chips__block {
+  animation: animUp 5s linear infinite;
+}
+.main-chips__block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
 }
 .main-btn {
   padding: 20px 72px;
@@ -259,6 +293,22 @@ header {
   opacity: 0.6;
 }
 
+@keyframes animUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-593px);
+  }
+}
+@keyframes animDoun {
+  0% {
+    transform: translateY(-581px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 footer {
   flex-grow: 0;
   border-left: 4px solid rgb(71, 139, 249);
