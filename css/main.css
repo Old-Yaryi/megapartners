@@ -128,6 +128,7 @@ header {
 }
 .main-item.chips {
   width: 331px;
+  margin-right: 37px;
 }
 .main-item h1 {
   max-width: 670px;
@@ -153,6 +154,9 @@ header {
 .main-chips {
   overflow: hidden;
   position: relative;
+  display: flex;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
 }
 .main-chips__line {
   display: flex;
@@ -164,6 +168,9 @@ header {
   flex-direction: column;
   row-gap: 15px;
   margin-top: -40px;
+}
+.main-chips__line.thierd {
+  margin-top: 40px;
 }
 .main-btn {
   padding: 20px 72px;
